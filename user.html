@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>User</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__start">
+        <p class="header__start-item">
+          Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09
+        </p>
+        <a class="header__start-ancer" href="#">Обратный звонок</a>
+      </div>
+      <div class="container">
+        <div class="header__block">
+          <a href="#">
+            <img src="./images/icons/header__logo.svg" alt="" />
+          </a>
+          <div class="header__center">
+            <nav>
+              <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>
+                  <a href="#"
+                    >Каталог
+                    <i class="fa-solid fa-sm header__vector fa-chevron-down"></i
+                  ></a>
+                </li>
+                <li><a href="#">Оптовая продажа</a></li>
+                <li><a href="#">О нас</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__right">
+            <a
+              href="tel:+7
+            (966) 55 88 499"
+              class="header__right-ancer"
+              ><i class="fa-solid fa-phone faxs" style="color: #387df5"></i>+7
+              (966) 55 88 499</a
+            >
+            <div>
+              <i class="fa-regular fa-heart fa-xl" style="color: #898b90"></i>
+              <i
+                class="fa-solid fa-cart-shopping fa-xl"
+                style="color: #949494"
+              ></i><span class="count" id="count"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div id="user__block" class="user__block">
+        <img src="" alt="" id="images" class="user__images" />
+        <div>
+          <p id="title" class="user__title"></p>
+          <p id="description" class="user__desc"></p>
+          <p id="updatedAt" class="user__desc"></p>
+          <p class="sale">Цена</p>
+          <p id="price" class="user__price"></p>
+          <button class="user__btn" id="user__btn">КОРЗИНКА</button>
+        </div>
+      </div>
+    </div>
+    <script src="../script/user.js"></script>
+  </body>
+</html>
