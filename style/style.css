@@ -135,7 +135,7 @@ ul {
   margin-top: 32px;
 }
 .home__wrapper {
-  height: 460px;
+  height: 530px;
   width: 288px;
   padding: 24px;
   border-radius: 2px;
@@ -270,6 +270,9 @@ ul {
   justify-content: space-between;
   margin-top: 40px;
 }
+.home__wrapper hr {
+  margin-top: 15px;
+}
 .filter__input {
   color: var(--black, #161c24);
   font-size: 14px;
@@ -297,4 +300,197 @@ ul {
 .price__box {
   display: flex;
   align-items: center;
+}
+.visited__block {
+  margin-top: 100px;
+}
+.visited__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.visited__wrapper {
+  padding: 10px;
+  background: #fff;
+  box-shadow: -1px 0px 0px 0px #eaeaea inset, 1px 0px 0px 0px #eaeaea inset,
+    0px -1px 0px 0px #eaeaea inset;
+}
+.visited__wrapper img {
+  width: 100%;
+}
+.visited__wrapper h2 {
+  color: var(--grey, #454f5b);
+  font-size: 16px;
+  font-weight: 400;
+  width: 284px;
+  line-height: 26px;
+}
+.visited__place {
+  color: var(--black, #161c24);
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: normal;
+}
+.visited__sale {
+  color: var(--grey, #454f5b);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: line-through;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.eget__block {
+  margin-top: 96px;
+}
+.eget__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 82px;
+}
+.eget__box h2 {
+  color: var(--black, #161c24);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 25px;
+}
+.eget__box p {
+  color: var(--grey, #454f5b);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  width: 605px;
+  margin-bottom: 24px;
+}
+.eget__form {
+  width: 400px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.eget__form p {
+  color: var(--black, #161c24);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.eget__block input {
+  margin-right: 5px;
+}
+.eget__parag {
+  color: var(--grey, #454f5b);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 15px;
+}
+.footer__top {
+  background: var(--bg-light, #f2f8ff);
+  margin-top: 20px;
+  padding: 60px 0;
+}
+.footer__top h2 {
+  color: var(--black, #161c24);
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 62px;
+}
+.footer__top p {
+  color: var(--grey, #454f5b);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 24px auto;
+  width: 518px;
+}
+.footer__top-form {
+  margin: 24px auto;
+  width: 670px;
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+.footer__top-form input {
+  background: rgba(22, 28, 36, 0.04);
+  padding: 12px 16px;
+  border: none;
+  color: var(--grey, #454f5b);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer__top-form button {
+  width: 220px;
+  padding: 12px 0;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  background: var(--main, #4295e4);
+  border: none;
+}
+.footer {
+  background-color: #0d2436;
+  padding: 25px 0;
+  box-shadow: 0px 1px 0px 0px #c4cdd5 inset;
+}
+.footer__block {
+  margin-top: 30px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.footer__logo {
+  width: 105px;
+  height: 88px;
+}
+.footer__list {
+  color: var(--white, #fff);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.footer__item li {
+  margin-top: 15px;
+}
+.footer__item p {
+  color: var(--light-grey, #c4cdd5);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 24px;
+}
+.footer__item a {
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 5px 0;
+}
+.footer__images {
+  margin-top: 144px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.footer__hr {
+  margin-top: 50px;
+  opacity: 0.08;
+  background: #fff;
+}
+.footer__subtitle {
+  color: var(--white, #fff);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-top: 24px;
 }

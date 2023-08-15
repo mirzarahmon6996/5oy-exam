@@ -37,6 +37,7 @@ async function Date() {
 
     `;
     dateFragment.appendChild(div);
+    results.length = "12";
   });
   homeContent.appendChild(dateFragment);
   total.innerHTML = `
@@ -45,29 +46,20 @@ async function Date() {
 }
 Date();
 
-let count = localStorage.getItem("count") || 0;
-countElement.textContent = count;
-userBtn.addEventListener("click", (e) => {
-  e.preventDefault;
-  count++;
-  countElement.textContent = count;
-  localStorage.setItem(`count`, count);
-  console.log(count);
-});
+// filterInput.addEventListener("input", filterProductsByPrice);
 
-filterInput.addEventListener("input", filterProductsByPrice);
+// function filterProductsByPrice() {
+//   const enteredPrice = +filterInput.value;
 
-function filterProductsByPrice() {
-  const enteredPrice = +filterInput.value;
+//   const filt = dataProduct.filter((pro) => {
+//     return !isNaN(enteredPrice) && pro.price >= enteredPrice;
+//   });
 
-  const filt = dataProduct.filter((pro) => {
-    return !isNaN(enteredPrice) && pro.price >= enteredPrice;
-  });
+//   clearInput(filt);
+// }
 
-  clearInput(filt);
-}
+// function clearInput(products) {
+//   cardContainer.innerHTML = "";
+//   renderProducts(products);
+// }
 
-function clearInput(products) {
-  cardContainer.innerHTML = "";
-  renderProducts(products);
-}

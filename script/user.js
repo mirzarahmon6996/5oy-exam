@@ -17,7 +17,6 @@ async function getInfo() {
       price.innerHTML = data.price;
       description.innerHTML = data.description;
       updatedAt.innerHTML = data.updatedAt;
-      console.log(data);
     }
   } catch (error) {
     console.error("An error occurred:", error);
@@ -26,12 +25,28 @@ async function getInfo() {
 
 getInfo();
 
-let count = localStorage.getItem("count") || 0;
-countElement.textContent = count;
-userBtn.addEventListener("click", (e) => {
-  e.preventDefault;
-  count++;
-  countElement.textContent = count;
-  localStorage.setItem(`count`, count);
-  console.log(count);
-});
+function addToBasket(item) {
+  fetch("https://api.escuelajs.co/api/v1/auth/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(item),
+  })
+    .then((response) => response.json())
+    .then((updatedBasket) => {
+      localStorage.setItem("basket", JSON.stringify(updatedBasket));
+      console.log("Item added to basket:", item);
+      console.log("Updated basket:", updatedBasket);
+    })
+    .catch((error) => {
+      console.error("Error adding item to basket:", error);
+    });
+}
+
+const item = {
+  name: "Product 1",
+  price: 9.99,
+};
+
+addToBasket(item);

@@ -70,7 +70,7 @@
       </div>
     </header>
     <hr />
-    <body>
+    <main>
       <div class="container">
         <p class="home__title">Главная / <span>Каталог</span></p>
         <h2 class="home__subtitle">
@@ -92,12 +92,187 @@
                 style="color: #6892d9"
               ></i>
             </div>
-              <input type="number" id="filter__input" class="filter__input" placeholder="24 500₽"/>
+            <input
+              type="number"
+              id="filter__input"
+              class="filter__input"
+              placeholder="24 500₽"
+            />
+            <hr />
+            <div class="filter__block">
+              <p>Особенности</p>
+              <i
+                class="fa-solid fa-chevron-down fa-sm fa-rotate-180"
+                style="color: #6892d9"
+              ></i>
+            </div>
+            <hr />
+            <div class="filter__block">
+              <p>Цвет</p>
+              <i
+                class="fa-solid fa-chevron-down fa-sm fa-rotate-180"
+                style="color: #6892d9"
+              ></i>
+            </div>
+            <hr />
+            <div class="filter__block">
+              <p>Материал</p>
+              <i
+                class="fa-solid fa-chevron-down fa-sm fa-rotate-180"
+                style="color: #6892d9"
+              ></i>
+            </div>
+            <hr />
+            <div class="filter__block">
+              <p>Размеры</p>
+              <i
+                class="fa-solid fa-chevron-down fa-sm fa-rotate-180"
+                style="color: #6892d9"
+              ></i>
+            </div>
+            <hr />
           </div>
           <div class="home__content" id="home__content"></div>
         </div>
+        <div class="visited__block">
+          <h2>Вы недавно просмотрели</h2>
+          <div class="visited__container">
+            <div class="visited__wrapper">
+              <img src="./images/visited__img.png" alt="" />
+              <h2>Дверной Замок Golden Soft для отеля</h2>
+              <span class="visited__place">33 000₽</span>
+              <span class="visited__sale">37 000₽</span>
+            </div>
+            <div class="visited__wrapper">
+              <img src="./images/visited__img.png" alt="" />
+              <h2>Дверной Замок Golden Soft для отеля</h2>
+              <span class="visited__place">33 000₽</span>
+              <span class="visited__sale">37 000₽</span>
+            </div>
+            <div class="visited__wrapper">
+              <img src="./images/visited__img.png" alt="" />
+              <h2>Дверной Замок Golden Soft для отеля</h2>
+              <span class="visited__place">33 000₽</span>
+              <span class="visited__sale">37 000₽</span>
+            </div>
+            <div class="visited__wrapper">
+              <img src="./images/visited__img.png" alt="" />
+              <h2>Дверной Замок Golden Soft для отеля</h2>
+              <span class="visited__place">33 000₽</span>
+              <span class="visited__sale">37 000₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="eget__block">
+          <div class="eget__container">
+            <div class="eget__box">
+              <h2>Eget quis quam metus, scelerisque.</h2>
+              <p>
+                Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu
+                porttitor molestie massa porttitor. Quisque at turpis ut proin
+                eu et magna etiam rhoncus.
+              </p>
+              <div class="eget__form">
+                <span><input type="checkbox" />Межкомнатую дверь</span>
+                <span><input type="checkbox" />Межкомнатую дверь</span>
+              </div>
+              <div class="eget__form">
+                <span><input type="checkbox" />Деревянную дверь</span>
+                <span><input type="checkbox" />Деревянную дверьь</span>
+              </div>
+              <p class="eget__parag">
+                Ac risus neque pulvinar tincidunt est. Tristique imperdiet
+                viverra interdum in leo. Nullam ullamcorper id enim fermentum
+                integer praesent bibendum. In ullamcorper purus scelerisque
+                malesuada et egestas. Ac dictumst mauris sed facilisis.
+              </p>
+            </div>
+            <img src="./images/eget__img.png" alt="" />
+          </div>
+          <div class="eget__container">
+            <img src="./images/eget__img2.png" alt="" />
+            <div class="eget__box">
+              <h2>Eget quis quam metus, scelerisque.</h2>
+              <p>
+                Odio felis sit leo, massa, mauris, at pulvinar ultrices. Eu
+                porttitor molestie massa porttitor. Quisque at turpis ut proin
+                eu et magna etiam rhoncus.
+              </p>
+              <p>
+                Ac risus neque pulvinar tincidunt est. Tristique imperdiet
+                viverra interdum in leo. Nullam ullamcorper id enim fermentum
+                integer praesent bibendum. In ullamcorper purus scelerisque
+                malesuada et egestas. Ac dictumst mauris sed facilisis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__top">
+          <h2>Мы Вам перезвоним</h2>
+          <p>
+            Если у вас возникли какие-то вопросы или проблемы, заполните форму и
+            мы Вам перезвоним.
+          </p>
+          <form class="footer__top-form">
+            <input type="text"  required placeholder="Ваше имя" />
+            <input type="email" required  placeholder="Ваш Email" />
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
-    </body>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__block">
+          <div>
+            <img
+              class="footer__logo"
+              src="./images/icons/header__logo.svg"
+              alt=""
+            />
+            <div class="footer__images">
+              <img src="./images/icons/wk.svg" alt="" />
+              <img src="./images/icons/twitter.svg" alt="" />
+              <img src="./images/icons/facebook.svg" alt="" />
+            </div>
+          </div>
+          <ul class="footer__item">
+            <h2 class="footer__list">Навигация</h2>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Оптовая продажа</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+          <ul class="footer__item">
+            <h2 class="footer__list">Наши контакты</h2>
+            <p>Телефоны</p>
+            <li><a href="tel:+7 (988) 565 00 38">+7 (988) 565 00 38</a></li>
+            <li><a href="tel:+375 33 662 82 56">+375 33 662 82 56</a></li>
+            <p>Email</p>
+            <li><a href="mail:vladpertcev@mail.ru">vladpertcev@mail.ru</a></li>
+            <li>
+              <a href="mail:korobko416@gmail.com">korobko416@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="footer__item">
+            <h2 class="footer__list">Наш адрес</h2>
+            <p>
+              Россия, <br />
+              Ростов-на-Дону ул. <br />
+              Богачева, 16
+            </p>
+          </ul>
+          <ul class="footer__item">
+            <h2 class="footer__list">информация</h2>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Возврат товара</a></li>
+          </ul>
+        </div>
+        <hr class="footer__hr" />
+        <p class="footer__subtitle">© 2021 Golden Soft All rights reserved.</p>
+      </div>
+    </footer>
     <script src="./script/main.js"></script>
   </body>
 </html>
