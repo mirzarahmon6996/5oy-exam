@@ -30,8 +30,8 @@ async function Date() {
 </svg></div>
      <p class="card__desc">${description}</p>
     <div class="price__box">
-    <p class="card__price">${price}</p>
-      <p class="price-product-deleted">${price + 86}</p></div>
+    <p class="card__price">${price}₽</p>
+      <p class="price-product-deleted">${price + 86}₽</p></div>
    </div>
    <a/>
 
