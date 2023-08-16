@@ -25,7 +25,7 @@ async function getInfo() {
 
 getInfo();
 
-let count = localStorage.getItem("count") || 0;
+let count = localStorage.getItem("count") || [];
 
 countElement.textContent = count;
 

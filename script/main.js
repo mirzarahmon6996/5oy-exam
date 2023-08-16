@@ -46,7 +46,7 @@ async function Date() {
 }
 Date();
 
-let count = localStorage.getItem("count") || 0;
+let count = localStorage.getItem("count") || [];
 
 countElement.textContent = count;
 
