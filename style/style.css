@@ -17,6 +17,10 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header__start {
   background: var(--grey, #454f5b);
   display: flex;

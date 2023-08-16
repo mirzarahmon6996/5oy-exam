@@ -25,28 +25,5 @@ async function getInfo() {
 
 getInfo();
 
-function addToBasket(item) {
-  fetch("https://api.escuelajs.co/api/v1/auth/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(item),
-  })
-    .then((response) => response.json())
-    .then((updatedBasket) => {
-      localStorage.setItem("basket", JSON.stringify(updatedBasket));
-      console.log("Item added to basket:", item);
-      console.log("Updated basket:", updatedBasket);
-    })
-    .catch((error) => {
-      console.error("Error adding item to basket:", error);
-    });
-}
 
-const item = {
-  name: "Product 1",
-  price: 9.99,
-};
 
-addToBasket(item);

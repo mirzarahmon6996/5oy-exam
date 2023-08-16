@@ -45,21 +45,3 @@ async function Date() {
 `;
 }
 Date();
-
-// filterInput.addEventListener("input", filterProductsByPrice);
-
-// function filterProductsByPrice() {
-//   const enteredPrice = +filterInput.value;
-
-//   const filt = dataProduct.filter((pro) => {
-//     return !isNaN(enteredPrice) && pro.price >= enteredPrice;
-//   });
-
-//   clearInput(filt);
-// }
-
-// function clearInput(products) {
-//   cardContainer.innerHTML = "";
-//   renderProducts(products);
-// }
-
