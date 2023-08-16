@@ -45,3 +45,13 @@ async function Date() {
 `;
 }
 Date();
+
+let count = localStorage.getItem("count") || 0;
+
+countElement.textContent = count;
+
+userBtn.addEventListener("click", () => {
+  count++;
+  countElement.textContent = count;
+  localStorage.setItem("count", count);
+});
